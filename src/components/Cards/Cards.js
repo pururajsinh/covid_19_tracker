@@ -19,7 +19,7 @@ function Cards({ data: { confirmed, recovered, deaths, lastUpdate } }) {
           item
           component={Card}
           className={cx(styles.card, styles.infected)}
-          xs={12}
+          xs={8}
           md={3}
         >
           <CardContent>
@@ -31,7 +31,7 @@ function Cards({ data: { confirmed, recovered, deaths, lastUpdate } }) {
                 start={0}
                 end={confirmed.value}
                 duration={5}
-                seperator=","
+                separator=","
               />
             </Typography>
             <Typography color="textSecondary">
@@ -46,7 +46,7 @@ function Cards({ data: { confirmed, recovered, deaths, lastUpdate } }) {
           item
           component={Card}
           className={cx(styles.card, styles.recovered)}
-          xs={12}
+          xs={8}
           md={3}
         >
           <CardContent>
@@ -58,7 +58,7 @@ function Cards({ data: { confirmed, recovered, deaths, lastUpdate } }) {
                 start={0}
                 end={recovered.value}
                 duration={3}
-                seperator=","
+                separator=","
               />
             </Typography>
             <Typography color="textSecondary">
@@ -73,7 +73,7 @@ function Cards({ data: { confirmed, recovered, deaths, lastUpdate } }) {
           item
           component={Card}
           className={cx(styles.card, styles.deaths)}
-          xs={12}
+          xs={8}
           md={3}
         >
           <CardContent>
@@ -85,7 +85,7 @@ function Cards({ data: { confirmed, recovered, deaths, lastUpdate } }) {
                 start={0}
                 end={deaths.value}
                 duration={2}
-                seperator=","
+                separator=","
               />
             </Typography>
             <Typography color="textSecondary">
